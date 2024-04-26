@@ -32,60 +32,45 @@ To install the dependencies, follow these steps:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone [<repository_url>](https://github.com/vishalreddydumbala/threads-clone-master.git)
+    git clone https://github.com/vishalreddydumbala/threads-clone-master.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd thread-clone
+    cd threads-clone-master
     ```
 
 3. Install the necessary dependencies for both the frontend and backend:
 
     ```bash
-    # Install backend dependencies
-    cd backend
-    npm install
-    
-    # Install frontend dependencies
-    cd ../frontend
-    npm install
+    # Build the project
+    npm run build
     ```
 
 ## Usage
 
 To start the application, follow these steps:
 
-1. Start the backend server:
+1. Create a .env file in project directory with below variables:
+    ```bash
+    # Port for the server
+    PORT=
+    # Mongo db connection uri
+    MONGO_URI=
+    # Random jwt secret
+    JWT_SECRET=
+    # Cloudinary for storing post images
+    CLOUDINARY_CLOUD_NAME=
+    CLOUDINARY_API_KEY=
+    CLOUDINARY_API_SECRET=
+    ```
+
+2. Start the project:
 
     ```bash
-    # Navigate to the backend directory
-    cd backend
-    
-    # Start the server
+    # Navigate to the project directory
     npm start
     ```
 
-2. Start the frontend development server:
-
-    ```bash
-    # Navigate to the frontend directory
-    cd ../frontend
-    
-    # Start the development server
-    npm start
-    ```
-
-3. Access the application in your web browser by visiting `http://localhost:3000`.
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/new-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature/new-feature`).
-6. Create a new Pull Request.
+3. Access the application in your web browser by visiting `http://localhost:5000`.
