@@ -32,7 +32,7 @@ To install the dependencies, follow these steps:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone <repository_url>
+    git clone [<repository_url>](https://github.com/vishalreddydumbala/threads-clone-master.git)
     ```
 
 2. Navigate to the project directory:
