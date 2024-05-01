@@ -39,8 +39,6 @@ const SuggestedUser = ({ user }) => {
 
 export default SuggestedUser;
 
-//  SuggestedUser component, if u want to copy and paste as shown in the tutorial
-
 {
 	/* <Flex gap={2} justifyContent={"space-between"} alignItems={"center"}>
 			<Flex gap={2} as={Link} to={`${user.username}`}>
