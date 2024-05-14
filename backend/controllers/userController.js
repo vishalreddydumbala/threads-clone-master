@@ -77,7 +77,7 @@ const loginUser = async (req, res) => {
 			await user.save();
 		}
 
-		generateTokenAndSetCookie(user._id, res);
+		generateTokenAndSetCookie(user._id,username, res);
 
 		res.status(200).json({
 			_id: user._id,
